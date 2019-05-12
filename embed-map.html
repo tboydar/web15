@@ -38,35 +38,51 @@
 
     <style type="text/css">
         @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
         body {
             font-family: 'Noto Sans TC', sans-serif;
         }
-        
+
         .breadcrumb {
             background-color: white;
         }
-        
+
         .media {
             margin-top: 20px;
             font-size: 0.6em;
         }
-        
+
         .media img {
             width: 50px;
             height: auto;
         }
-        
+
         .media h5 {
             font-size: 1.2em;
         }
-        
+
         .like {
             margin-bottom: 20px;
             margin-right: 3px;
         }
-        
+
         .line {
             padding-top: 4px;
+        }
+
+        #map {
+            position: relative;
+            padding-bottom: 75%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        #map iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
         }
     </style>
 </head>
@@ -78,8 +94,8 @@
             <a class="navbar-brand" href="index.html">好野人行銷網</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
@@ -102,6 +118,13 @@
     </section>
     <section id="map">
         <div class="container">
+            <div class="row">
+                <div class="col" style="min-height:450px;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.071390548264!2d121.52037841635615!3d25.06556934317595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a945aa5ac531%3A0x986f8c54f1a01ae7!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDkuK3lsbHljJfot6_kuInmrrUyOeiZnw!5e0!3m2!1szh-TW!2stw!4v1557633607406!5m2!1szh-TW!2stw"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
 
         </div>
     </section>

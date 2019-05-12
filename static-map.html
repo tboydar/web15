@@ -38,35 +38,51 @@
 
     <style type="text/css">
         @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
         body {
             font-family: 'Noto Sans TC', sans-serif;
         }
-        
+
         .breadcrumb {
             background-color: white;
         }
-        
+
         .media {
             margin-top: 20px;
             font-size: 0.6em;
         }
-        
+
         .media img {
             width: 50px;
             height: auto;
         }
-        
+
         .media h5 {
             font-size: 1.2em;
         }
-        
+
         .like {
             margin-bottom: 20px;
             margin-right: 3px;
         }
-        
+
         .line {
             padding-top: 4px;
+        }
+
+        #map {
+            position: relative;
+            padding-bottom: 75%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        #map iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
         }
     </style>
 </head>
@@ -78,8 +94,8 @@
             <a class="navbar-brand" href="index.html">好野人行銷網</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto">
@@ -102,6 +118,12 @@
     </section>
     <section id="map">
         <div class="container">
+            <div class="row">
+                <div class="col" style="min-height:450px;">
+                    <img
+                        src="https://maps.googleapis.com/maps/api/staticmap?center=10491台北市中山區中山北路三段29號&zoom=17&scale=1&size=600x425&maptype=roadmap&format=png&visual_refresh=true&markers=color:red%7Clabel:C%7C25.0657058,121.522486&key=">
+                </div>
+            </div>
 
         </div>
     </section>
